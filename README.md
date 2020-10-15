@@ -1,4 +1,4 @@
-# psirt_check
+# psirt_checker
 Simple Query Application for Cisco PSRIT openVuln
 
 **Note:** There are 2 scripts.
