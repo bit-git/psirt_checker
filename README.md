@@ -1,14 +1,16 @@
 # psirt_checker
-Simple Query Application for Cisco PSRIT openVuln
+Simple Query Application for Cisco PSRIT openVuln API 
+
+**Note:** Checks for IOS-XE
 
 **Note:** There are 2 scripts.
 1. psirt-check-csv.py 
 
-**psirt-check-csv.py** - takes a text file as intput with verion numbers. See [input.txt](https://gitlab.com/ochohan/ciscosupportapi/-/raw/master/psirt-checker/input.txt) for an example. Prints summary and Saves details in a CSV file. </br>**-d/--detail** flag can be set to print the detail output on the screen.
+**psirt-check-csv.py** - takes a text file as an intput with IOS-XE verion numbers. See [input.txt](https://gitlab.com/ochohan/ciscosupportapi/-/raw/master/psirt-checker/input.txt) for an example. </br>Prints summary and Saves details in a CSV file. **-d/--detail** flag can be set to print the detail output on the screen.
 
 2. psirt-check-version.py
 
-**psirt-check-version.py** - takes version number as a command line argument. <</br>**-d/--detail** flag can be set to print the detail output on the screen.
+**psirt-check-version.py** - takes IOS-XE version number as a command line argument. </br>Prints summary. **-d/--detail** flag can be set to print the detail output on the screen.
 
 
 ## Requirements
