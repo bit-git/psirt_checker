@@ -4,11 +4,11 @@ Simple Query Application for Cisco PSRIT openVuln
 **Note:** There are 2 scripts.
 1. psirt-check-csv.py 
 
-**psirt-check-csv.py** - takes a text file as intput with verion numbers. See [input.txt](https://gitlab.com/ochohan/ciscosupportapi/-/raw/master/psirt-checker/input.txt) for an example. Prints summary and Saves details in a CSV file. -d/--detail flag can be set to print the detail output on the screen.
+**psirt-check-csv.py** - takes a text file as intput with verion numbers. See [input.txt](https://gitlab.com/ochohan/ciscosupportapi/-/raw/master/psirt-checker/input.txt) for an example. Prints summary and Saves details in a CSV file. </br>**-d/--detail** flag can be set to print the detail output on the screen.
 
 2. psirt-check-version.py
 
-**psirt-check-version.py** - takes version number as a command line argument. Prints the summary and details if -d/--detail flag is set.
+**psirt-check-version.py** - takes version number as a command line argument. <</br>**-d/--detail** flag can be set to print the detail output on the screen.
 
 
 ## Requirements
@@ -34,8 +34,14 @@ CLIENT_SECRET = adqB3jegsvbYbJfcx27As5au
 5. Create a text file with all the versions to check in the same folder. See [input.txt](https://gitlab.com/ochohan/ciscosupportapi/-/raw/master/psirt-checker/input.txt) for an example.
 
 ## Usage - psirt-check-csv.py 
-psirt-check-csv.py allows you to query the Cisco PSRIT openVuln and save the output in a CSV file.
+psirt-check-csv.py allows you to query the Cisco PSRIT openVuln and save the output in a CSV file.</br>**-d/--detail** flag can be set to print the detail output on the screen.
+```
+$ python psirt-checker/psirt-check-csv.py 
+usage: psirt-check-csv.py [-h] -f FILE [-d]
+psirt-check-csv.py: error: argument -f/--file is required
+```
 
+Example:
 ```
 $ python3 psirt-check-csv.py -f input.txt
 
@@ -76,6 +82,11 @@ version,advisory_id,advisory_title,first_fixed,bug_ids
 
 ## Usage - psirt-check-version.py
 psirt-check-version.py allows you to query the Cisco PSRIT openVuln with a version number.
+```
+$ python psirt-checker/psirt-check-version.py 
+usage: psirt-check-version.py [-h] -v VERSION [-d]
+psirt-check-version.py: error: argument -v/--version is required
+```
 
 Example:
 ```
